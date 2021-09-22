@@ -1,0 +1,70 @@
+{
+	"name": "GummyWorm",
+	"plugin-id": "Sprite",
+	"sid": 931559027394458,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Move",
+			"type": "boolean",
+			"desc": "Moves carrot Left",
+			"sid": 917202947608350
+		},
+		{
+			"name": "Shrink",
+			"type": "boolean",
+			"desc": "Makes food go into mouth",
+			"sid": 416417242544115
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 854,
+						"height": 706,
+						"originX": 1.2859014714726265,
+						"originY": 0.522212790610321,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7596281,
+						"collisionPoly": {
+							"points": [
+								0.6673318543213476,
+								0.622199290865684,
+								0.6273942832289474,
+								0,
+								0.888163129773444,
+								0.37166379357478446,
+								1,
+								0.5891829850211467,
+								0.878766054222291,
+								0.7969914982779397,
+								0.6273942832289474,
+								0.8300078041224765,
+								0.02833071684294053,
+								1,
+								0.7307621142916307,
+								0.5891829850211467
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 151169458859242,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

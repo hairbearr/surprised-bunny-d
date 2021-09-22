@@ -1,0 +1,64 @@
+{
+	"name": "Pepper2",
+	"plugin-id": "Sprite",
+	"sid": 774408796843352,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 133266772741077
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 614,
+						"height": 828,
+						"originX": 0.5667752442996743,
+						"originY": 0.5169082125603864,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6505710,
+						"collisionPoly": {
+							"points": [
+								0.5716612377850163,
+								0.5205314009661836,
+								0.5667752442996743,
+								0.007246376811594203,
+								0.9495114006514658,
+								0.2318840579710145,
+								0.990228013029316,
+								0.5169082125603864,
+								0.8827361563517915,
+								0.751207729468599,
+								0.5667752442996743,
+								0.9299516908212561,
+								0.0016286644951140066,
+								0.9347826086956522,
+								0.5716612377850163,
+								0.5169082125603864
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 834288851674995,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

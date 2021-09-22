@@ -1,0 +1,1727 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "foodOnScreenAmount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 432750423282044
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 467508034302056
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "bunnyHitBox",
+					"sid": 410929582946650,
+					"parameters": {
+						"x": "bunny.X",
+						"y": "bunny.Y"
+					}
+				}
+			],
+			"sid": 381822202448780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "food",
+					"sid": 999829106906791,
+					"parameters": {
+						"instance-variable": "Move"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "food",
+					"sid": 552768763738622,
+					"parameters": {
+						"x": "food.X-4"
+					}
+				}
+			],
+			"sid": 920616011485697
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Pepper",
+					"sid": 787580306417097,
+					"parameters": {
+						"instance-variable": "Move"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Pepper",
+					"sid": 802419398183988,
+					"parameters": {
+						"x": "Pepper.X-4"
+					}
+				}
+			],
+			"sid": 566989756660666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "GummyWorm",
+					"sid": 301023873892143,
+					"parameters": {
+						"instance-variable": "Move"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "GummyWorm",
+					"sid": 188306333318217,
+					"parameters": {
+						"x": "GummyWorm.X-4"
+					}
+				}
+			],
+			"sid": 786355357823483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Rock",
+					"sid": 184226339770775,
+					"parameters": {
+						"instance-variable": "Move"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Rock",
+					"sid": 595677872613236,
+					"parameters": {
+						"x": "Rock.X-4"
+					}
+				}
+			],
+			"sid": 402867382802325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "food",
+					"sid": 163911503979644,
+					"parameters": {
+						"object": "bunnyHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 228911831607797,
+					"parameters": {
+						"instance-variable": "Shrink",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 164571443908423,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 640436389112212,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 679098938650775,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 334866023472042,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 592931428237757
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "GummyWorm",
+					"sid": 824629729447790,
+					"parameters": {
+						"object": "bunnyHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm",
+					"sid": 736620265607477,
+					"parameters": {
+						"instance-variable": "Shrink",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm",
+					"sid": 721811265637418,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 172902468285173,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 778196584659360,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 353016308328516,
+					"parameters": {
+						"animation": "\"MouthGummyWorm\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 624111760864525,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 270002012959410,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 459345987356392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pepper",
+					"sid": 147818065826125,
+					"parameters": {
+						"object": "bunnyHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper",
+					"sid": 218959883039351,
+					"parameters": {
+						"instance-variable": "Shrink",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper",
+					"sid": 282784020049272,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 959729027966110,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 198471701385951,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 359371235030856,
+					"parameters": {
+						"animation": "\"MouthPepper\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 385451610439030,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 199583457238613,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 331141324585327
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Rock",
+					"sid": 989057359256462,
+					"parameters": {
+						"object": "bunnyHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock",
+					"sid": 603241914467781,
+					"parameters": {
+						"instance-variable": "Shrink",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock",
+					"sid": 740030697323587,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 216527535618894,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 211266820908635,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 781767848563856,
+					"parameters": {
+						"animation": "\"MouthRock\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 301136087446527,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 185553361596217,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 824406770261814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 913837145337760
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 762298951472012,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 922030052892147,
+					"parameters": {
+						"audio-file": "BLIP2",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 458487875748756
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 777118212479757,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 624890213469740,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "food2",
+							"sid": 961196312943013,
+							"parameters": {
+								"instance-variable": "Selected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "hand",
+							"sid": 870287345220383,
+							"parameters": {
+								"object": "food",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 113064954668899,
+							"parameters": {
+								"animation": "\"handOpen\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "hand",
+							"sid": 929136512075492,
+							"parameters": {
+								"instance-variable": "Release",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "food",
+							"sid": 348434033907007,
+							"parameters": {
+								"width": "66.279765",
+								"height": "73.793261"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "food",
+							"sid": 608964193069797,
+							"parameters": {
+								"instance-variable": "Move",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 241450668852745,
+							"parameters": {
+								"variable": "foodOnScreenAmount",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 173387376849598,
+							"parameters": {
+								"seconds": "2"
+							}
+						}
+					],
+					"sid": 191802382979053
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "GummyWorm2",
+							"sid": 772048356614683,
+							"parameters": {
+								"instance-variable": "Selected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "hand",
+							"sid": 785233174857456,
+							"parameters": {
+								"object": "GummyWorm",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 122213084743790,
+							"parameters": {
+								"animation": "\"handOpen\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "hand",
+							"sid": 966524926358227,
+							"parameters": {
+								"instance-variable": "Release",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "GummyWorm",
+							"sid": 835935900144743,
+							"parameters": {
+								"width": "59",
+								"height": "49"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "GummyWorm",
+							"sid": 429771950660450,
+							"parameters": {
+								"instance-variable": "Move",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 484913920624317,
+							"parameters": {
+								"variable": "foodOnScreenAmount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 719344325559620
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Pepper2",
+							"sid": 217895859459865,
+							"parameters": {
+								"instance-variable": "Selected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "hand",
+							"sid": 213380816617834,
+							"parameters": {
+								"object": "Pepper",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 630222516689715,
+							"parameters": {
+								"animation": "\"handOpen\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "hand",
+							"sid": 854412593022846,
+							"parameters": {
+								"instance-variable": "Release",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Pepper",
+							"sid": 290576109308715,
+							"parameters": {
+								"width": "59",
+								"height": "49"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Pepper",
+							"sid": 489598921328015,
+							"parameters": {
+								"instance-variable": "Move",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 892940690874029,
+							"parameters": {
+								"variable": "foodOnScreenAmount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 662231662952587
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Rock2",
+							"sid": 953589510679832,
+							"parameters": {
+								"instance-variable": "Selected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "hand",
+							"sid": 194513157738007,
+							"parameters": {
+								"object": "Rock",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 132347378783218,
+							"parameters": {
+								"animation": "\"handOpen\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "hand",
+							"sid": 539964142603088,
+							"parameters": {
+								"instance-variable": "Release",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Rock",
+							"sid": 801550209446209,
+							"parameters": {
+								"width": "66.92",
+								"height": "38.71"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Rock",
+							"sid": 353112920418897,
+							"parameters": {
+								"instance-variable": "Move",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 667030979806863,
+							"parameters": {
+								"variable": "foodOnScreenAmount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 129126131995289
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "food",
+					"sid": 377795545995805,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 117480765669805
+				}
+			],
+			"sid": 490908818467884
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 924380300196929
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 820163258129434,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"value": "food.Count"
+					}
+				}
+			],
+			"sid": 216616759198395,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 996257099143504,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 413495169174724,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 252550937435418,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-time",
+							"objectClass": "System",
+							"sid": 283944318358523,
+							"parameters": {
+								"comparison": 0,
+								"time-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "bunny",
+							"sid": 150262142649982,
+							"parameters": {
+								"animation": "\"MouthPepper\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 709366909970791,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 991554542621384,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 297860558559053,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 350699540270954,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "food",
+					"sid": 894300208252436,
+					"parameters": {
+						"instance-variable": "Shrink"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "food",
+					"sid": 253029883297446,
+					"parameters": {
+						"degrees": "10"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 802632543890853,
+					"parameters": {
+						"width": "food.Width-1",
+						"height": "food.Height-1"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "food",
+					"sid": 197912316333374,
+					"parameters": {
+						"angle": "angle(food.x, food.y, bunny.x, bunny.y)",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 710116759517750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "GummyWorm",
+					"sid": 961448844162779,
+					"parameters": {
+						"instance-variable": "Shrink"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "GummyWorm",
+					"sid": 639876371778555,
+					"parameters": {
+						"degrees": "10"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "GummyWorm",
+					"sid": 624906425930871,
+					"parameters": {
+						"width": "GummyWorm.Width-1",
+						"height": "GummyWorm.Height-1"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "GummyWorm",
+					"sid": 354184421524591,
+					"parameters": {
+						"angle": "angle(GummyWorm.x, GummyWorm.y, bunny.x, bunny.y)",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 103525650934522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Pepper",
+					"sid": 403125986064652,
+					"parameters": {
+						"instance-variable": "Shrink"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "Pepper",
+					"sid": 870421706676515,
+					"parameters": {
+						"degrees": "10"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Pepper",
+					"sid": 821994052505775,
+					"parameters": {
+						"width": "Pepper.Width-1",
+						"height": "Pepper.Height-1"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "Pepper",
+					"sid": 909196149380275,
+					"parameters": {
+						"angle": "angle(Pepper.x, Pepper.y, bunny.x, bunny.y)",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 257348182679521
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Rock",
+					"sid": 325885104617291,
+					"parameters": {
+						"instance-variable": "Shrink"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "Rock",
+					"sid": 168678504844465,
+					"parameters": {
+						"degrees": "10"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Rock",
+					"sid": 851601528732735,
+					"parameters": {
+						"width": "Rock.Width-1",
+						"height": "Rock.Height-1"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "Rock",
+					"sid": 644744610643282,
+					"parameters": {
+						"angle": "angle(Rock.x, Rock.y, bunny.x, bunny.y)",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 242680524587271
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 620477727694537,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 450562920959261
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 789038596329254,
+					"parameters": {
+						"audio-file": "HICCUP",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 531194519416587,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 914273516186171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "GummyWorm",
+					"sid": 594916153638629,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "GummyWorm",
+					"sid": 764666072763254
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 232434933115075,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 659093820193129,
+					"parameters": {
+						"audio-file": "HICCUP",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 792402038687888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "Pepper",
+					"sid": 281983810056944,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Pepper",
+					"sid": 165165964603257
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 925101971492667,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 747246522852509,
+					"parameters": {
+						"audio-file": "HICCUP",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 411281865931546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "Rock",
+					"sid": 958692479169508,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Rock",
+					"sid": 390704604786204
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 173267739939309,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 748062624830343,
+					"parameters": {
+						"audio-file": "HICCUP",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 167776689575218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 645505566534565
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 505091153265800,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 465553139585428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 241921726180558,
+					"parameters": {
+						"object": "food2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "food2",
+					"sid": 635862158986568,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "GummyWorm2",
+					"sid": 618335555235817,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Pepper2",
+					"sid": 311953836852946,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Rock2",
+					"sid": 379816269035532,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food2",
+					"sid": 209568069008583,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm2",
+					"sid": 747333630196730,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock2",
+					"sid": 870548597422669,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper2",
+					"sid": 414819309742234,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 306237194235026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 373067337473399,
+					"parameters": {
+						"object": "GummyWorm2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "food2",
+					"sid": 631998991610206,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "GummyWorm2",
+					"sid": 885912780037060,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Pepper2",
+					"sid": 149446712881884,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Rock2",
+					"sid": 472125835917988,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food2",
+					"sid": 141259570023180,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm2",
+					"sid": 756307342297043,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock2",
+					"sid": 833779769270579,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper2",
+					"sid": 906743716312814,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 280594524870833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 333323901978698,
+					"parameters": {
+						"object": "Pepper2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "food2",
+					"sid": 766882585886827,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "GummyWorm2",
+					"sid": 907808900410953,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Pepper2",
+					"sid": 307185369065950,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Rock2",
+					"sid": 966817978166935,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food2",
+					"sid": 992485117142440,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm2",
+					"sid": 354458289621825,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock2",
+					"sid": 407365281058982,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper2",
+					"sid": 574706220065146,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 431164483236009
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 649370028806438,
+					"parameters": {
+						"object": "Rock2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "food2",
+					"sid": 972216213728981,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "GummyWorm2",
+					"sid": 954765617446676,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Pepper2",
+					"sid": 720126245895600,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Rock2",
+					"sid": 699264260417300,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food2",
+					"sid": 493619785149092,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "GummyWorm2",
+					"sid": 115484157419084,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rock2",
+					"sid": 874126021675274,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pepper2",
+					"sid": 125929263964756,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 463354859078381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "food",
+					"sid": 489982559591463
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 406204852981563,
+					"parameters": {
+						"instance-variable": "FoodIntake",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 718274069830564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "GummyWorm",
+					"sid": 910411413368332
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 263740962091456,
+					"parameters": {
+						"instance-variable": "FoodIntake",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 474996687054057
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Pepper",
+					"sid": 793539629217413
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 642054821792285,
+					"parameters": {
+						"instance-variable": "FoodIntake",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 168180492479981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Rock",
+					"sid": 554614682088185
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "bunny",
+					"sid": 695383956572885,
+					"parameters": {
+						"instance-variable": "FoodIntake",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 250294900024664
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 533448239478045,
+					"parameters": {
+						"interval-seconds": "10.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "bunny",
+					"sid": 685100864945251,
+					"parameters": {
+						"instance-variable": "FoodIntake",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 846095993458904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 519424786592342
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 931447469899860,
+					"parameters": {
+						"text": "\"Score: 0\""
+					}
+				}
+			],
+			"sid": 540309620119848,
+			"disabled": true
+		}
+	],
+	"sid": 516847117888192
+}
