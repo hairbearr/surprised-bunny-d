@@ -1,0 +1,239 @@
+{
+	"name": "bunny",
+	"plugin-id": "Sprite",
+	"sid": 940579050120407,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FoodIntake",
+			"type": "number",
+			"desc": "",
+			"sid": 968809345969121
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 653,
+						"height": 853,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3901206,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 601024288905542,
+				"name": "MouthClosed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 402,
+						"height": 525,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6801240,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 260472276303524,
+				"name": "MouthOpen",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 464,
+						"height": 999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4559014,
+						"collisionPoly": {
+							"points": [
+								0.19827586206896552,
+								0.35735735735735735,
+								0.5021551724137931,
+								0.2672672672672673,
+								0.8168103448275862,
+								0.35135135135135137,
+								0.9806034482758621,
+								0.4984984984984985,
+								0.7068965517241379,
+								0.5935935935935935,
+								0.5021551724137931,
+								0.975975975975976,
+								0.30387931034482757,
+								0.5895895895895896,
+								0.05818965517241379,
+								0.4984984984984985
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 502039694914485,
+				"name": "MouthPepper",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 705,
+						"height": 922,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7614690,
+						"collisionPoly": {
+							"points": [
+								0.0028368794326241137,
+								0.15292841648590022,
+								0.4907801418439716,
+								0.4360086767895879,
+								0.9843971631205674,
+								0.1475054229934924,
+								0.7120567375886525,
+								0.5260303687635575,
+								0.9404255319148936,
+								0.8698481561822126,
+								0.4907801418439716,
+								0.9967462039045553,
+								0.07375886524822695,
+								0.8438177874186551,
+								0.25390070921985813,
+								0.5260303687635575
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 710716631608291,
+				"name": "MouthGross",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 656,
+						"height": 858,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 121023,
+						"collisionPoly": {
+							"points": [
+								0.003048780487804878,
+								0.14685314685314685,
+								0.4847560975609756,
+								0.4160839160839161,
+								0.9847560975609756,
+								0.1317016317016317,
+								0.7240853658536586,
+								0.5151515151515151,
+								0.9451219512195121,
+								0.8671328671328671,
+								0.4847560975609756,
+								0.9953379953379954,
+								0.06707317073170732,
+								0.8333333333333334,
+								0.24390243902439024,
+								0.5151515151515151
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 447495887634519,
+				"name": "MouthGummyWorm",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 634,
+						"height": 829,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1910760,
+						"collisionPoly": {
+							"points": [
+								0.00473186119873817,
+								0.13268998793727382,
+								0.49369085173501576,
+								0.4439083232810615,
+								0.9842271293375394,
+								0.13027744270205066,
+								0.7350157728706624,
+								0.5066344993968637,
+								0.9542586750788643,
+								0.8588661037394452,
+								0.49369085173501576,
+								0.9975874547647768,
+								0.06624605678233439,
+								0.8323281061519904,
+								0.23501577287066247,
+								0.5066344993968637
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 338345336751400,
+				"name": "MouthRock",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

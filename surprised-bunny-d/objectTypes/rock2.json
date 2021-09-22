@@ -1,0 +1,64 @@
+{
+	"name": "Rock2",
+	"plugin-id": "Sprite",
+	"sid": 231536154070735,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 592363324960569
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 956,
+						"height": 553,
+						"originX": 0.5104602510460251,
+						"originY": 0.49909584086799275,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9701197,
+						"collisionPoly": {
+							"points": [
+								0.26569037656903766,
+								0.0759493670886076,
+								0.5104602510460251,
+								0.04159132007233273,
+								0.6799163179916318,
+								0.20433996383363473,
+								0.9435146443514645,
+								0.49909584086799275,
+								0.7824267782426778,
+								0.969258589511754,
+								0.5104602510460251,
+								0.9963833634719711,
+								0.2719665271966527,
+								0.9095840867992767,
+								0.0010460251046025104,
+								0.49909584086799275
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 877860101133718,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

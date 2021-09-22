@@ -1,0 +1,64 @@
+{
+	"name": "GummyWorm2",
+	"plugin-id": "Sprite",
+	"sid": 719783246270759,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 522693755911707
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 706,
+						"height": 854,
+						"originX": 0.5495750708215298,
+						"originY": 0.5128805620608899,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9343551,
+						"collisionPoly": {
+							"points": [
+								0.5736543909348442,
+								0.5327868852459017,
+								0.5495750708215298,
+								0.13348946135831383,
+								0.7067988668555241,
+								0.38173302107728335,
+								0.7917847025495751,
+								0.5128805620608899,
+								0.7011331444759207,
+								0.6381733021077284,
+								0.5495750708215298,
+								0.65807962529274,
+								0.18838526912181303,
+								0.810304449648712,
+								0.6118980169971672,
+								0.5128805620608899
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 703118764517280,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

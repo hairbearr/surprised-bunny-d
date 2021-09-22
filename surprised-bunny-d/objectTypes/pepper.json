@@ -1,0 +1,70 @@
+{
+	"name": "Pepper",
+	"plugin-id": "Sprite",
+	"sid": 394518976200526,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Move",
+			"type": "boolean",
+			"desc": "Moves carrot Left",
+			"sid": 611496020273266
+		},
+		{
+			"name": "Shrink",
+			"type": "boolean",
+			"desc": "Makes food go into mouth",
+			"sid": 111617580886075
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 828,
+						"height": 614,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9554966,
+						"collisionPoly": {
+							"points": [
+								0.33550810281922216,
+								0.8393026943344423,
+								1,
+								0.7742577902751586,
+								0.6380872058275551,
+								1,
+								0.37538286833194845,
+								1,
+								0.12440640304596651,
+								1,
+								0.08453163753324089,
+								0.7742577902751586,
+								0,
+								0,
+								0.37538286833194845,
+								0.9426093066638936
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 612831165283859,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"name": "Rock",
+	"plugin-id": "Sprite",
+	"sid": 213940167042845,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Move",
+			"type": "boolean",
+			"desc": "Moves carrot Left",
+			"sid": 172535663282561
+		},
+		{
+			"name": "Shrink",
+			"type": "boolean",
+			"desc": "Makes food go into mouth",
+			"sid": 730249523867504
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 956,
+						"height": 553,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4580915,
+						"collisionPoly": {
+							"points": [
+								0.3383975970912366,
+								1,
+								1,
+								0.9950412120708113,
+								0.6549029349660618,
+								1,
+								0.38010760285768663,
+								1,
+								0.11757991950414907,
+								1,
+								0.07586991373769966,
+								0.9950412120708113,
+								0,
+								0,
+								0.38010760285768663,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 212899972999054,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

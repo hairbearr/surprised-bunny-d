@@ -1,0 +1,110 @@
+{
+	"name": "hand",
+	"plugin-id": "Sprite",
+	"sid": 893314507575558,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Release",
+			"type": "boolean",
+			"desc": "",
+			"sid": 535699816074362
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 231,
+						"height": 232,
+						"originX": 0.5021645021645021,
+						"originY": 0.5301724137931034,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 206879,
+						"collisionPoly": {
+							"points": [
+								0.13852813852813853,
+								0.16810344827586207,
+								0.5021645021645021,
+								0.008620689655172414,
+								0.7662337662337663,
+								0.2629310344827586,
+								0.948051948051948,
+								0.5301724137931034,
+								0.9004329004329005,
+								0.9267241379310345,
+								0.5021645021645021,
+								0.9655172413793104,
+								0.2510822510822511,
+								0.7758620689655171,
+								0.05194805194805195,
+								0.5301724137931034
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 152947410287401,
+				"name": "handWithFood",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8573666,
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 329415808122068,
+				"name": "handNoFood",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5927659,
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 798849839598477,
+				"name": "handOpen",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

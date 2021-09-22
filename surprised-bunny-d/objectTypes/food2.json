@@ -1,0 +1,64 @@
+{
+	"name": "food2",
+	"plugin-id": "Sprite",
+	"sid": 252944383509728,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 787858827436459
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 247,
+						"height": 275,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5816249,
+						"collisionPoly": {
+							"points": [
+								0.3481781376518219,
+								0.3890909090909091,
+								0.46558704453441296,
+								0.14545454545454545,
+								0.7246963562753036,
+								0.2581818181818182,
+								0.5748987854251012,
+								0.49454545454545457,
+								0.5991902834008097,
+								0.6145454545454545,
+								0.46558704453441296,
+								0.7454545454545455,
+								0.008097165991902834,
+								0.9018181818181819,
+								0.1862348178137652,
+								0.49454545454545457
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 845929805699792,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
